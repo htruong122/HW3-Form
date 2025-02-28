@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helen Truong</title>
+    <link rel="stylesheet" href="hw3.css">
+    <script src="hw3.js" defer></script>
+</head>
+<body>
+    <div class="paper-frame">
+        <form method="POST" action="/api/hw3">
+            <input type="hidden" id="first-name" name="first-name" value="Helen">
+            <input type="hidden" id="last-name" name="last-name" value="Truong">
+            
+            <div class="form-row">
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            
+                <div>
+                    <label for="availability">Availability:</label>
+                    <input type="time" id="availability" name="availability" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="1" max="150" required>
+                </div>
+            
+                <div>
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" id="birthday" name="birthday" required>
+                </div>
+            </div>
+            
+            <div style="display: flex; justify-content: right;">
+                <label for="random-checkbox">Random Checkbox:</label>
+                <input type="checkbox" id="random-checkbox" name="random-checkbox" checked>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>Favorite Food:</legend>
+                    <input type="radio" id="food1" name="favorite-food" value="Pizza">
+                    <label for="food1">Pizza</label>
+                    <input type="radio" id="food2" name="favorite-food" value="Sushi">
+                    <label for="food2">Sushi</label>
+                    <input type="radio" id="food3" name="favorite-food" value="Pasta">
+                    <label for="food3">Pasta</label>
+                    <input type="radio" id="food4" name="favorite-food" value="Burger">
+                    <label for="food4">Burger</label>
+                    <input type="radio" id="food5" name="favorite-food" value="Salad">
+                    <label for="food5">Salad</label>
+                </fieldset>
+            </div>
+            
+            <div>
+                <fieldset>
+                    <legend>Favorite Thing:</legend>
+                    <input type="radio" id="thing1" name="favorite-thing" value="Music">
+                    <label for="thing1">Music</label>
+                    <input type="radio" id="thing2" name="favorite-thing" value="Books">
+                    <label for="thing2">Books</label>
+                    <input type="radio" id="thing3" name="favorite-thing" value="Movies">
+                    <label for="thing3">Movies</label>
+                    <input type="radio" id="thing4" name="favorite-thing" value="Travel">
+                    <label for="thing4">Travel</label>
+                    <input type="radio" id="thing5" name="favorite-thing" value="Gaming">
+                    <label for="thing5">Gaming</label>
+                    <input type="radio" id="thing6" name="favorite-thing" value="Cooking">
+                    <label for="thing6">Cooking</label>
+                </fieldset>
+            </div>
+
+            <div class="form-group" style="display: flex; flex-direction: column;">
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <button type="submit" id="submit" style="font-size: 15px; padding: 10px 24px; border-radius: 15px;">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+/* Change the background color of the entire page */
+body {
+    background-color: #def2fc; /* Light blue color */
+}
+
+form div {
+    margin-bottom: 10px; /* Adjust spacing between each input */
+}
+.form-row {
+    display: flex;         /* Enables horizontal layout */
+    gap: 20px;             /* Adds space between elements */
+    align-items: center;   /* Aligns inputs evenly */
+}
+.form-row div {
+    display: flex;
+    flex-direction: column; /* Ensures label stays above input */
+    flex: 1;                /* Ensures equal width for inputs */
+}
+
+/* Creates a paper-like frame for the form */
+.paper-frame {
+    width: 60%; /* Adjust width as needed */
+    margin: 20px auto; /* Centers the form */
+    padding: 30px; /* Adds spacing inside */
+    background-color: rgb(185, 235, 241); /* Paper-like background */
+    border: 2px solid #71d6f0; 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    border-radius: 10px; /* Smooth rounded edges */
+    overflow: hidden; /* Prevents any content from overflowing */
+}
+
+/* Styles the fieldsets to look cleaner */
+fieldset {
+    border: 2px solid #18bce0;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: solid #bce5f0;
+}
+
+textarea {
+    width: 100%; /* Ensures the textarea stays within its container */
+    max-width: 100%; /* Prevents it from growing too large */
+    box-sizing: border-box; /* Includes padding and border in width */
+    resize: vertical; /* Allows vertical resizing only */
+}
+
+/* Target specific input fields */
+input[type="email"],
+input[type="time"],
+input[type="number"],
+input[type="date"],
+textarea {
+    background-color: #fef4e8; /* Light peach color */
+    border: 2px solid  #18bce0; /* Adds a subtle border */
+    padding: 5px; /* Adjusts padding for better spacing */
+    border-radius: 5px; /* Adds rounded corners */
+}
+
+/* Style the submit button */
+button#submit {
+    background-color:solid #fef4e8; 
+    color: #000; /* Text color */
+    border: 2px solid #18bce0; /* Border color */
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Changes cursor to pointer */
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+button#submit:hover {
+    background-color: #47d4ff; /* Slightly darker shade on hover */
+}
